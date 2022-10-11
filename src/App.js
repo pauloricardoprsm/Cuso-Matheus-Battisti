@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// Css
 import './App.css';
 
-function App() {
+// Imagens
+import City from './assets/city.jpg';
+
+// Componentes
+import { FistComponent } from './components/FistComponent';
+import { Events } from './components/Events';
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Fundamentos React</h1>
+        <FistComponent/>
+        <Events/>
+        {/* Imagem em public */}
+        <img src="/img1.jpg" alt="Uma bela paisagem" />
+        {/* Imagem em asset */}
+        <img src={City} alt="Uma bela Cidade" />
+      <div>
+      </div>
     </div>
   );
 }
-
-export default App;
